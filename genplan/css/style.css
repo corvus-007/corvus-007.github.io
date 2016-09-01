@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+}
+
+.layout-genplan {
+  
+}
+
+.genplan {
+  position: relative;
+}
+
+.genplan__img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.genplan__svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.genplan__svg polygon {
+  fill: #027d3c;
+  fill: #00ffc4;
+  fill-opacity: 0;
+  transition: fill-opacity 0.15s;
+/*  cursor: pointer;*/
+}
+
+.genplan__svg polygon:hover {
+  fill-opacity: 0.9;
+}
