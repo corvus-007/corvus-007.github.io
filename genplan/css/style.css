@@ -26,12 +26,11 @@ body {
 
 .genplan__svg polygon {
   fill: #027d3c;
-  fill: #00ffc4;
   fill-opacity: 0;
   transition: fill-opacity 0.15s;
-/*  cursor: pointer;*/
+  cursor: pointer;
 }
 
 .genplan__svg polygon:hover {
-  fill-opacity: 0.9;
+  fill-opacity: 0.3;
 }
