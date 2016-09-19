@@ -2,32 +2,52 @@ body {
   margin: 0;
 }
 
+.site-header,
+.site-footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  /*mix-blend-mode: color;*/
+  opacity: 0.5;
+}
+
+.site-header {
+  height: 80px;
+  top: 0;
+  background-color: #fe3;
+}
+
+.site-footer {
+  height: 52px;
+  bottom: 0;
+  background-color: #2af;
+}
+
 .layout-genplan {
-  
+  padding-top: 80px;
+  padding-bottom: 52px;
+  overflow: hidden;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .genplan {
   position: relative;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
 }
 
 .genplan__img,
 .genplan__svg {
   position: absolute;
-/*  top: 50%;*/
-/*  left: 50%;*/
-/*  transform: translate3d(-50%, -50%, 0);*/
-/*  min-width: 1280px;*/
-/*  min-height: 728px;*/
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .genplan__img {
+  object-fit: cover;
 }
 
 .genplan__svg {
