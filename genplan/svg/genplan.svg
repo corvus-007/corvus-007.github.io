@@ -1,59 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 728">
   <defs>
     <style>
-      .cls-1 {
-        fill: red;
-      }
 
-      .cls-1, .cls-2, .cls-3, .cls-5, .cls-6 {
-        opacity: 0.5;
-      }
+ polygon {
+  fill: #03A9F4;
+  fill-opacity: 0;
+  transition: fill-opacity 0.15s;
+  cursor: pointer;
+}
 
-      .cls-2 {
-        fill: #8cc63f;
-      }
-
-      .cls-3 {
-        fill: #568ad6;
-      }
-
-      .cls-4, .cls-5 {
-        fill: #8066c4;
-      }
-
-      .cls-4 {
-        opacity: 0.6;
-      }
-
-      .cls-7 {
-        fill: #00ff42;
-      }
-
-      .cls-8 {
-        fill: #cf39d3;
-      }
-
-      .cls-9 {
-        fill: #2ba3d8;
-      }
-
-      .cls-10 {
-        fill: #37d62b;
-      }
-
-      .cls-11 {
-        fill: #d1bd2f;
-      }
-
-      .cls-12 {
-        fill: #2d39d3;
-      }
+ polygon:hover {
+  fill-opacity: 0.5;
+}
     </style>
   </defs>
   <title>genplan</title>
-  <g id="Layer_1" data-name="Layer 1">
-    <image width="1280" height="728" xlink:href="../../../OpenServer/domains/greenwood.local/genplan/genplan.png"/>
-  </g>
   <g id="house-9-2">
     <polygon id="_9-2-2" data-name="9-2-2" class="cls-1" points="676 450.3 725.3 394.3 748.4 403.6 759 390.9 781.7 400.2 781.1 416.8 858.7 448 815.1 508.9 801.8 614.3 672.3 554.3 676 450.3"/>
     <polygon id="_9-2-1" data-name="9-2-1" class="cls-2" points="858.7 448 939.9 480 949.3 465.5 975.6 475.3 972.3 492.7 1008 506.8 979.5 609.3 942.5 681 801.8 614.3 815.1 508.9 858.7 448"/>

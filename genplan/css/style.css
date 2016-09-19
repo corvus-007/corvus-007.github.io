@@ -8,20 +8,29 @@ body {
 
 .genplan {
   position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.genplan__img {
-  width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
+.genplan__img,
 .genplan__svg {
   position: absolute;
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  transform: translate3d(-50%, -50%, 0);*/
+/*  min-width: 1280px;*/
+/*  min-height: 728px;*/
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+.genplan__img {
+}
+
+.genplan__svg {
 }
 
 .genplan__svg polygon {
