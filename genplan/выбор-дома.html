@@ -1,0 +1,124 @@
+[[$header]]
+
+<div class="clearfix"></div>
+
+<div class="contacts_page inside_page wrapper ">
+  
+  [[$top_panel]]
+<!-- active -->
+<div class="select_house  container">
+  <div class=" select_house_map ">
+      <div class=" select_house_map__bg ">
+          <div class="layout-genplan">
+                <div class="genplan">
+                  [[$genplan]]
+              </div>
+            </div>
+      </div>
+      <div class=" select_house_map__information ">
+          
+          <div class="select_house_map__information__filter_button">
+              <div class="select_house_map__information__filter_button__circle">
+                  <div class="display_table">
+                      <div class="display_table__cell">
+                          <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M4 34h4v1h-2v2h2v1h-4v2h6v-8h-6v2zm2-18h2v-8h-4v2h2v6zm-2 6h3.6l-3.6 4.2v1.8h6v-2h-3.6l3.6-4.2v-1.8h-6v2zm10-12v4h28v-4h-28zm0 28h28v-4h-28v4zm0-12h28v-4h-28v4z"/><path d="M0 0h48v48h-48z" fill="none"/></svg>
+                        </div>
+                  </div>
+              </div>
+              <div class="select_house_map__information__filter_button__label">
+                  <span>
+                      Подбор <br>
+                      по параметрам
+                  </span>
+                </div>
+          </div>
+          
+          [[!print_markers_houses]]
+          
+          <div class="parking_marker one"></div>
+          <div class="parking_marker two"></div>
+          <div class="parking_marker three"></div>
+          <div class="relax_marker"></div>
+          <div class="kids_area_marker"></div>
+          
+      </div>
+  </div>
+  <div class="select_house_info">
+        <div class="select_house_info__bg active"></div>
+        <div class="select_house_info__close green_circle_button">
+            <div class="close">
+          <div class="line one"></div>
+          <div class="line two"></div>
+      </div>
+        </div>
+        
+        <div class="select_house_info__list">
+            [[!select_house_info__list]]
+        </div>
+        
+  </div>
+  
+  [[!floor_plan]]
+  
+  [[!flat_plan]]
+  
+</div>
+
+
+
+  [[$footer_inside]]
+
+</div>
+
+<div class="clearfix"></div>
+
+<script src="/template/frameworks/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
+<script src="/template/js/select_house.js"></script>
+<script src="/template/js/floor_plan.js"></script>
+<script src="/template/js/flat_plan.js"></script>
+
+<script>
+    
+    function resize_page() {
+        
+        // Подсчитываем основные отступы
+        var main_margins = 0;
+        var top_panel = $(".top_panel").height();
+        var footer = $(".footer_inside").height();
+        var footer_padding_top = $(".footer_inside").css("padding-top").replace("px", "");
+        var footer_padding_bottom = $(".footer_inside").css("padding-bottom").replace("px", "");
+        footer = Number(footer) + Number(footer_padding_top) + Number(footer_padding_bottom);
+        main_margins = $(window).height() - (Number(footer) + Number(top_panel) );
+        
+        $(".layout-genplan").height(main_margins);
+        //$(".layout-genplan img").height(main_margins);
+        //$(".layout-genplan svg").height(main_margins);
+        
+        var width_map = 1280;
+        var height_map = 728;
+        
+        if ( $(".layout-genplan").height() > $(".layout-genplan svg").height() )
+        {
+            $(".layout-genplan svg").height(main_margins);
+        }
+        
+        var margin_top = $(".layout-genplan svg").height() / 100 * 0.7 /  2 ;
+        $(".genplan").css({"margin-top": "-" + margin_top + "%" });
+        
+        
+        // $(".genplan").css({"margin": "-" + margin_top +"px 1px 2px " + margin_left + "px" });
+        
+        
+        
+        
+    }
+    
+    resize_page();
+    
+    $(window).resize(function(){
+        resize_page();
+    });
+    
+</script>
+
+[[$footer]]

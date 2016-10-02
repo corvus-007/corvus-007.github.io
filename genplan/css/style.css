@@ -1,65 +1,357 @@
 body {
-  margin: 0;
+	overflow: hidden;
+	margin: 0;
+	font-family: Akrobat, sans-serif;
 }
 
 .site-header,
 .site-footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 5;
-  /*mix-blend-mode: color;*/
-  opacity: 0.5;
+	position: absolute;
+	right: 0;
+	left: 0;
+	z-index: 5;
+	/*mix-blend-mode: color;*/
+	opacity: 0.5;
 }
 
 .site-header {
-  height: 80px;
-  top: 0;
-  background-color: #fe3;
+	top: 0;
+	height: 80px;
+	background-color: #fe3;
 }
 
 .site-footer {
-  height: 52px;
-  bottom: 0;
-  background-color: #2af;
+	bottom: 0;
+	height: 52px;
+	background-color: #2af;
 }
 
 .layout-genplan {
-  padding-top: 80px;
-  padding-bottom: 52px;
-  overflow: hidden;
-  height: 100vh;
-  box-sizing: border-box;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding-top: 80px;
+	padding-bottom: 52px;
+	height: 100vh;
 }
 
 .genplan {
-  position: relative;
-  height: 100%;
+	position: relative;
+	height: 100%;
 }
 
 .genplan__img,
 .genplan__svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .genplan__img {
-  object-fit: cover;
+	object-fit: cover;
 }
 
-.genplan__svg {
-}
+.genplan__svg {}
 
 .genplan__svg polygon {
-  fill: #03A9F4;
-  fill-opacity: 0;
-  transition: fill-opacity 0.15s;
-  cursor: pointer;
+	cursor: pointer;
+	transition: fill-opacity 0.3s;
+	fill: #03A9F4;
+	fill-opacity: 0;
 }
 
 .genplan__svg polygon:hover {
-  fill-opacity: 0.5;
+	fill-opacity: 0.5;
 }
+
+
+/* Dosc panel */
+
+.docs-panel {
+	position: absolute;
+	bottom: 0;
+	left: 300px;
+	z-index: 10;
+	width: 300px;
+	font-family: Akrobat, sans-serif;
+	transition: transform 0.3s;
+	will-change: transform;
+}
+
+.docs-panel--opened {
+	bottom: 0;
+}
+
+.docs-panel--closed {
+	transform: translateY(100%);
+}
+
+.docs-panel__close {
+	position: absolute;
+	right: 0;
+	bottom: 100%;
+	overflow: hidden;
+	width: 48px;
+	height: 48px;
+	outline: none;
+	border: none;
+	background: #00a057;
+	text-indent: -1000px;
+	font-size: 0;
+	cursor: pointer;
+	transition: transform 0.3s ease-out, background-color 0.2s;
+	will-change: transform;
+}
+
+.docs-panel__close::before {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23fff' d='M38 12.8L35.2 10 24 21.2 12.8 10 10 12.8 21.2 24 10 35.2l2.8 2.8L24 26.8 35.2 38l2.8-2.8L26.8 24z'/%3E%3C/svg%3E");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: "";
+}
+
+.docs-panel__close:hover {
+	background: #009c55;
+}
+
+.docs-panel--opened .docs-panel__close {
+	transition-delay: 0.3s, 0s;
+}
+
+.docs-panel--closed .docs-panel__close {
+	transform: translateY(100%);
+}
+
+.docs-panel__list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-color: #008d4d;
+	list-style: none;
+}
+
+.docs-panel__item {
+	color: #fff;
+	letter-spacing: 0.05em;
+	font-size: 15px;
+}
+
+.docs-panel__item-link {
+	position: relative;
+	display: block;
+	padding: 20px;
+	padding-left: 50px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	color: currentColor;
+	text-decoration: none;
+	transition: background-color 0.3s ease-out;
+}
+
+.docs-panel__item:last-child .docs-panel__item-link {
+	border-bottom: none;
+}
+
+.docs-panel__item-link::before {
+	position: absolute;
+	left: 20px;
+	width: 24px;
+	height: 24px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23fff' d='M28 4H12C9.8 4 8 5.8 8 8v32c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V16L28 4zm4 32H16v-4h16v4zm0-8H16v-4h16v4zm-6-10V7l11 11H26z'/%3E%3C/svg%3E");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: "";
+	transition: background 0.3s ease-out;
+}
+
+.docs-panel__item-link:hover {
+	background-color: #049553;
+}
+
+.docs-panel__item-title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 1em;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	border: 0;
+}
+
+
+/* Form */
+
+.form-group {
+	margin-bottom: 0.8rem;
+}
+
+.form-label {
+	padding-bottom: 0.3em;
+	font-size: 0.95rem;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.form-label--required::after {
+	content: "*";
+	margin-left: 0.2em;
+	display: inline-block;
+	color: #F44336;
+}
+
+.form-control {
+	padding: 10px 15px;
+	width: 100%;
+	border: 1px solid #e2e2e2;
+	font: inherit;
+	font-size: 1.1rem;
+	line-height: normal;
+	box-sizing: border-box;
+	outline: none;
+	border-radius: 2px;
+	transition: 0.3s;
+	background: #f3f3f3;
+}
+
+textarea.form-control {
+	max-height: 200px;
+	resize: vertical;
+}
+
+.form-control:hover {
+	background: #f9f9f9;
+}
+
+.form-control:focus {
+	border-color: #bbb;
+	box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, 0.05);
+	background: #fff;
+}
+
+.form-submit-wrapper {
+	text-align: center;
+	margin-top: 1.5rem;
+}
+
+.form-submit {
+	min-width: 150px;
+	padding: 10px 15px;
+	border: 1px solid transparent;
+	font: inherit;
+	font-size: 1rem;
+	line-height: normal;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	box-sizing: border-box;
+	letter-spacing: 0.04em;
+	outline: none;
+	color: #fff;
+	background: #0f9b51;
+	cursor: pointer;
+	border-radius: 3em;
+	transition: background 0.2s;
+}
+
+.form-submit:hover,
+.form-submit:focus {
+	background: #1e3241;
+}
+
+.form-submit:active {
+	background: #0b1217;
+}
+
+
+
+/* Popup */
+
+.popup {
+	position: relative;
+	background: #FFF;
+	padding: 2rem;
+	width: auto;
+	max-width: 400px;
+	margin: 20px auto;
+}
+
+.popup__title {
+	margin: 0;
+	margin-bottom: 1em;
+	text-align: center;
+	font-size: 1.65rem;
+	font-weight: 700;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+
+/* overlay at start */
+.popup-fade.mfp-bg {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+/* overlay animate in */
+.popup-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.popup-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.popup-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+/* content animate it */
+.popup-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+/* content animate out */
+.popup-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
