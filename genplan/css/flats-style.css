@@ -1,0 +1,79 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Akrobat, sans-serif;
+}
+
+svg {
+}
+
+svg * {
+  pointer-events: none;
+}
+
+svg .hovered_flat_at_plan {
+  pointer-events: auto;
+  cursor: pointer;
+  fill-opacity: 0.5;
+  transition: fill-opacity 0.35s;
+}
+
+svg .hovered_flat_at_plan:hover,
+svg .hovered_flat_at_plan.trigger_hover {
+  fill-opacity: 1;
+}
+
+svg .flat_plan_1 {
+  fill: #8ce;
+}
+svg .flat_plan_2 {
+  fill: #4d9;
+}
+svg .flat_plan_3 {
+  fill: #fc8;
+}
+svg .flat_plan_4 {
+  fill: #fab;
+}
+svg .flat_plan_5 {
+  fill: #caf;
+}
+svg .flat_plan_p {
+  fill: #abf;
+}
+
+
+
+.house-section {
+  margin-bottom: 4em;
+}
+
+.house-section h1 {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.house-section h2 {
+  margin: 0;
+  margin-bottom: 1em;
+  font-size: 1.15em;
+}
+
+.house-floors-list {
+  display: flex;
+  /*align-items: center;*/
+}
+
+.house-floor {
+  padding: 1em;
+  flex: 1 1 0%;
+  border: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.house-floor:hover {
+  padding: 1em;
+  flex: 1 1 0%;
+  border: 1px solid #ccc;
+}

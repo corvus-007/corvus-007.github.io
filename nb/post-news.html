@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Страница новости</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="banner top-banner">
+      <a href="">
+        <img src="http://news.nashbryansk.ru/v2/img/b_data/2017/1/domru/domru_10_3840x240.jpg" alt="">
+      </a>
+      <!-- <iframe src="http://news.nashbryansk.ru/v2/img/b_data/2017/8/gortaxi.html?v=1?v=70" frameborder="0"></iframe> -->
+    </div>
+    <header class="main-header">
+      <div class="topbar">
+        <div class="topbar__inner container-fluid">
+          <div class="topbar__item topbar__item--infobar">
+            <div class="infobar">
+              <ul class="infobar__list">
+                <li class="infobar__item" title="Погода">
+                  <svg class="infobar__icon" width="30" height="30">
+                    <use xlink:href="/images/symbols.svg#weather-8"></use>
+                  </svg>
+                  <div class="infobar__value">+3°</div>
+                </li>
+                <li class="infobar__item" title="Курс доллара">
+                  <span class="infobar__currency">$</span>
+                  <span class="infobar__value">67,56</span>
+                </li>
+                <li class="infobar__item" title="Курс евро">
+                  <span class="infobar__currency">€</span>
+                  <span class="infobar__value">57,47</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="topbar__item topbar__item--socials">
+            <div class="socials">
+              <a class="socials__item" href="" title="Наш Брянск в Одноклассники">
+                <svg class="socials__icon" width="18" height="18">
+                  <use xlink:href="/images/symbols.svg#soc-odnoklassniki"></use>
+                </svg>
+              </a>
+              <a class="socials__item" href="" title="Наш Брянск в Twitter">
+                <svg class="socials__icon" width="18" height="18">
+                  <use xlink:href="/images/symbols.svg#soc-twitter"></use>
+                </svg>
+              </a>
+              <a class="socials__item" href="" title="Наш Брянск в Вконтакте">
+                <svg class="socials__icon" width="18" height="18">
+                  <use xlink:href="/images/symbols.svg#soc-vk"></use>
+                </svg>
+              </a>
+              <a class="socials__item" href="" title="Наш Брянск в Facebook">
+                <svg class="socials__icon" width="18" height="18">
+                  <use xlink:href="/images/symbols.svg#soc-facebook"></use>
+                </svg>
+              </a>
+              <a class="socials__item" href="" title="Наш Брянск в Instagram">
+                <svg class="socials__icon" width="18" height="18">
+                  <use xlink:href="/images/symbols.svg#soc-instagram"></use>
+                </svg>
+              </a>
+              <a class="socials__item" href="" title="Наш Брянск в Google+">
+                <svg class="socials__icon" width="18" height="18">
+                  <use xlink:href="/images/symbols.svg#soc-google-plus"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="topbar__item topbar__item--searchbar">
+            <div class="searchbar searchbar--closed">
+              <button class="searchbar-toggler" type="button" aria-label="Показать поиск">
+                <svg class="searchbar-toggler__icon" width="18" height="18">
+                  <use xlink:href="/images/symbols.svg#search"></use>
+                </svg>
+              </button>
+              <div class="searchbar__content">
+                <form class="searchbar__form searchbox searchbox--black" action="" method="GET">
+                  <input class="searchbox__input form-control" type="search" name="s" placeholder="Введите слово или фразу для поиска и нажмите Enter">
+                  <button class="searchbox__submit" aria-label="Искать">
+                    <svg class="searchbox__submit-icon" width="18" height="18">
+                      <use xlink:href="/images/symbols.svg#search"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar">
+        <div class="navbar__inner container-fluid">
+          <div class="navbar__logo logo">
+            <a class="logo__link" href="/">
+              <img class="logo__image" src="/images/logo-with-caption.svg" width="240" alt="Логотип компании «Название_компании»">
+            </a>
+          </div>
+          <div class="main-nav-wrapper">
+            <nav id="main-nav" class="main-nav">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Россия и мир</span>
+                  </a>
+                </li>
+                <li class="main-nav__item main-nav__item--active">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Общество</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Власть</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Происшествия</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Новости компаний</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Спорт</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Культура</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Происшествия</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Новости компаний</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Спорт</span>
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="">
+                    <span class="main-nav__link-text">Культура</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="main">
+      <div class="main-grid container-fluid js-parent-sticky-sidebar-banners">
+        <div class="main-grid__column-main">
+          <div class="banner">
+            <a href="">
+              <img src="http://placeholder.pics/svg/935x100/ddd/666-ddd" alt="">
+            </a>
+          </div>
+          <article class="post" itemscope itemtype="http://schema.org/NewsArticle">
+            <header class="post__header">
+              <h1 class="post__title" itemprop="headline">Осиротевшая косуля нашла в заповеднике «Брянский лес» приемную маму</h1>
+              <div class="post-info">
+                <div class="post-info__item post-info__item--rubric">
+                  <span class="post__rubric rubric" itemprop="genre">Общество</span>
+                </div>
+                <div class="post-info__item post-info__item--time">
+                  <time class="post__time time" datetime="2017-09-25T15:34" itemprop="datePublished">25 октября, 15:34</time>
+                </div>
+                <div class="post-info__item post-info__item--countеrs">
+                  <ul class="post__counters counters">
+                    <li class="counters__item" itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+                      <svg class="counters__icon" width="16" height="16" aria-label="Количество просмотров">
+                        <use xlink:href="/images/symbols.svg#eye"></use>
+                      </svg>
+                      <meta itemprop="interactionType" content="http://schema.org/WatchAction" />
+                      <span itemprop="userInteractionCount" content="166">166</span>
+                    </li>
+                    <li class="counters__item" itemprop="interactionStatistic" itemscope itemtype="http://schema.org/InteractionCounter">
+                      <svg class="counters__icon" width="16" height="16" aria-label="Количество комментариев">
+                        <use xlink:href="/images/symbols.svg#bubble"></use>
+                      </svg>
+                      <meta itemprop="interactionType" content="http://schema.org/CommentAction" />
+                      <span itemprop="userInteractionCount" content="18">18</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </header>
+            <div class="post-imagebox" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+              <img src="https://images.unsplash.com/photo-1427434991195-f42379e2139d?auto=format&fit=crop&w=1489&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Осиротевшая косуля нашла в заповеднике «Брянский лес» приемную маму" itemprop="contentUrl">
+              <div class="post-imagebox__info">
+                <span>Фото: <a href="">public-photo.ru/nature</a></span>
+              </div>
+            </div>
+            <div class="post-share">
+              post-share
+            </div>
+            <div class="post-content" itemprop="articleBody">
+              <div class="post-content__intro">
+                <p>Детеныш косули по имени Киса, которого летом принесли жители Трубчевского района в заповедник, вырос, окреп и готовится отправиться в самостоятельную жизнь.</p>
+              </div>
+              <p>Как сообщается на сайте «Брянского леса» малыш почти сразу попал под присмотр сотрудницы заповедника Ирине Птицыной, специалисту отдела экологического просвещения и туризма. Когда малышка попала в заповедник, ей было не более пяти дней, ей требовался особенный уход и Ирина стала для лесного зверя настоящей приемной матерью.</p>
+              <blockquote>
+                <p>«Первые три дня малышка не хотела есть из соски, приходилось насильно вливать буквально по двадцать граммов каждые полчаса, — рассказывает Ирина. — На четвертый день я решилась на принципиально другие меры: намазала кофту козьим молоком и легла в шалашик, в котором поселили косуленка, пела ей песни, гуляла с ней по кордону. Спустя пять часов случилось чудо: малышка схватила соску и высосала все молоко».</p>
+              </blockquote>
+              <!-- <p><img src="https://images.unsplash.com/photo-1475710534222-6165a8b45449?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt=""></p> -->
+              <p>Сегодня Киса весела и здорова, по-прежнему живет на кордоне и стала настоящей местной звездой — все приезжающие туристы в восторге от малышки.</p>
+              <aside class="post-incut">
+                <a class="related-post-news" href="">
+                  <div class="related-post-news__imagebox">
+                    <img src="https://images.unsplash.com/photo-1489066018051-404bf1b5faa5?auto=format&fit=crop&w=1349&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">
+                  </div>
+                  <div class="related-post-news__body">
+                    <span class="related-post-news__label">Читайте также</span>
+                    <h5 class="related-post-news__title">В Клинцах скандал между депутатами и журналистом получил продолжение</h5>
+                  </div>
+                </a>
+              </aside>
+              <p>В последние недели к кордону регулярно приходит стадо косулей. Вполне вероятно, пройдет еще какое-то время, и Киса встретится со своими сородичами и, быть может, присоединится к стаду.</p>
+            </div>
+            <div class="post__footer">
+              <div class="post__tags tags">
+                <span class="tags__label">Теги:</span>
+                <ul class="tags__list">
+                  <li><a href="">заповедник «Брянский лес»</a></li>
+                  <li><a href="">Трубчевский район</a></li>
+                  <li><a href="">косуля</a></li>
+                </ul>
+              </div>
+              <div class="post__origin">
+                <p>Источник: Екатерина Угрюмова © NASHBRYANSK.RU, 2017</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="banner">
+            <a href="">
+              <img src="http://placeholder.pics/svg/935x100/ddd/666-ddd" alt="">
+            </a>
+          </div>
+
+          <section class="section comments">
+            <div class="section-header">
+              <div class="section-title">Комментарии читателей</div>
+            </div>
+          </section>
+        </div>
+
+        <div class="main-grid__column-right">
+          <aside class="sidebar">
+            <div class="sidebar-module">
+              <div class="banner">
+                <a href="">
+                  <img src="http://news.nashbryansk.ru/v2/img/b_data/2017/7/greenwood_nb.gif?v=70" alt="">
+                </a>
+              </div>
+            </div>
+
+            <section class="sidebar-module popular-news">
+              <div class="sidebar-module__head">
+                <h3 class="sidebar-module__title section-title">Популярное</h3>
+              </div>
+              <ul class="popular-news__list">
+                <li class="popular-news__item">
+                  <a class="popular-news__item-link" href="">
+                    <div class="popular-news__item-imagebox">
+                      <img class="popular-news__item-image" src="https://images.unsplash.com/photo-1489861464420-98e73bf2d186?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Москвичка не успела сделать героиновые «заначки» для брянцев">
+                    </div>
+                    <div class="popular-news__item-body">
+                      <span class="popular-news__item-rubric">Общество</span>
+                      <h4 class="popular-news__item-title">Москвичка не успела сделать героиновые «заначки» для брянцев</h4>
+                    </div>
+                  </a>
+                </li>
+                <li class="popular-news__item">
+                  <a class="popular-news__item-link" href="">
+                    <div class="popular-news__item-imagebox">
+                      <img class="popular-news__item-image" src="https://images.unsplash.com/35/SRkdurVYQFSFkMyHVwSu_spinnenweb-9536.jpg?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Пьяная и голая уроженка Брянска заплутала в Москве">
+                    </div>
+                    <div class="popular-news__item-body">
+                      <span class="popular-news__item-rubric">Происшествия</span>
+                      <h4 class="popular-news__item-title">Пьяная и голая уроженка Брянска заплутала в Москве</h4>
+                    </div>
+                  </a>
+                </li>
+                <li class="popular-news__item">
+                  <a class="popular-news__item-link" href="">
+                    <div class="popular-news__item-imagebox">
+                      <img class="popular-news__item-image" src="https://images.unsplash.com/photo-1468958118603-09353f91a3dc?auto=format&fit=crop&w=1268&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Доступная среда по-брянски: высокие бордюры, разбитые тротуары и узкие пандусы">
+                    </div>
+                    <div class="popular-news__item-body">
+                      <span class="popular-news__item-rubric">Общество</span>
+                      <h4 class="popular-news__item-title">Доступная среда по-брянски: высокие бордюры, разбитые тротуары и узкие пандусы</h4>
+                    </div>
+                  </a>
+                </li>
+                <li class="popular-news__item">
+                  <a class="popular-news__item-link" href="">
+                    <div class="popular-news__item-imagebox">
+                      <img class="popular-news__item-image" src="https://images.unsplash.com/photo-1483202277372-226db5c0ae2d?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Ученые призвали не уступать старикам место в транспорте">
+                    </div>
+                    <div class="popular-news__item-body">
+                      <span class="popular-news__item-rubric">Общество</span>
+                      <h4 class="popular-news__item-title">Ученые призвали не уступать старикам место в транспорте</h4>
+                    </div>
+                  </a>
+                </li>
+                <li class="popular-news__item">
+                  <a class="popular-news__item-link" href="">
+                    <div class="popular-news__item-imagebox">
+                      <img class="popular-news__item-image" src="https://images.unsplash.com/photo-1486825586573-7131f7991bdd?auto=format&fit=crop&w=634&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="В День открытых дверей медики брянского онкодиспансера нашли рак у семи женщин">
+                    </div>
+                    <div class="popular-news__item-body">
+                      <span class="popular-news__item-rubric">Здоровье</span>
+                      <h4 class="popular-news__item-title">В День открытых дверей медики брянского онкодиспансера нашли рак у семи женщин</h4>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <div class="sidebar-module">
+              <div class="sticky-banners theiaStickySidebar">
+                <div class="banner">
+                  <a href="">
+                    <img src="http://news.nashbryansk.ru/v2/img/b_data/2017/7/siam_191017.gif?v=70" alt="">
+                  </a>
+                </div>
+                <div class="banner">
+                  <a href="">
+                    <img src="http://placeholder.pics/svg/255x240/ddd/666-ddd" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <section class="section-all-news section">
+        <div class="section-header container-fluid">
+          <h2 class="section-title section-title--not-line">Все новости</h2>
+        </div>
+        <div class="all-news container-fluid">
+          <ul class="all-news__list">
+            <li class="all-news__item">
+              <a class="all-news__item-link" href="">
+                <div class="all-news__item-imagebox">
+                  <img class="all-news__item-image" src="https://images.unsplash.com/photo-1489927420382-5682d6084c55?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Осужденному за взятку экс-главе Володарки отказали в рассрочке миллионного штрафа">
+                  <span class="all-news__item-rubric rubric">
+                    Происшествие
+                  </span>
+                </div>
+                <h3 class="all-news__item-title">Осужденному за взятку экс-главе Володарки отказали в рассрочке миллионного штрафа</h3>
+                <time class="all-news__item-time time" datetime="2017-10-25T09:50">25 октября, 9:50</time>
+              </a>
+            </li>
+            <li class="all-news__item">
+              <a class="all-news__item-link" href="">
+                <div class="all-news__item-imagebox">
+                  <img class="all-news__item-image" src="https://images.unsplash.com/photo-1503434093675-b3a674c0b3e0?auto=format&fit=crop&w=634&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Президиум Верховного суда отказал Генпрокуратуре по делу Сиваковой">
+                  <span class="all-news__item-rubric rubric">
+                    Происшествие
+                  </span>
+                </div>
+                <h3 class="all-news__item-title">Президиум Верховного суда отказал Генпрокуратуре по делу Сиваковой</h3>
+                <time class="all-news__item-time time" datetime="2017-10-25T09:33">25 октября, 9:33</time>
+              </a>
+            </li>
+            <li class="all-news__item">
+              <a class="all-news__item-link" href="">
+                <div class="all-news__item-imagebox">
+                  <img class="all-news__item-image" src="https://images.unsplash.com/photo-1455747634646-0ef67dfca23f?auto=format&fit=crop&w=1267&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="В Карачевсеком районе в огне погибли три человека">
+                  <span class="all-news__item-rubric rubric">
+                    Происшествие
+                  </span>
+                </div>
+                <h3 class="all-news__item-title">В Карачевсеком районе в огне погибли три человека</h3>
+                <time class="all-news__item-time time" datetime="2017-10-25T09:20">25 октября, 9:20</time>
+              </a>
+            </li>
+            <li class="all-news__item">
+              <a class="all-news__item-link" href="">
+                <div class="all-news__item-imagebox">
+                  <img class="all-news__item-image" src="https://images.unsplash.com/photo-1420768255295-e871cbf6eb81?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="В Брянске на Речной две иномарки не поделили дорогу">
+                  <span class="all-news__item-rubric rubric">
+                    Происшествие
+                  </span>
+                </div>
+                <h3 class="all-news__item-title">В Брянске на Речной две иномарки не поделили дорогу</h3>
+                <time class="all-news__item-time time" datetime="2017-10-25T09:17">25 октября, 9:17</time>
+              </a>
+            </li>
+            <li class="all-news__item">
+              <a class="all-news__item-link" href="">
+                <div class="all-news__item-imagebox">
+                  <img class="all-news__item-image" src="https://images.unsplash.com/photo-1508363431152-b82504521949?auto=format&fit=crop&w=701&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Московский музыкант удивит брянцев эмо-попом">
+                  <span class="all-news__item-rubric rubric">
+                    Культура
+                  </span>
+                </div>
+                <h3 class="all-news__item-title">Московский музыкант удивит брянцев эмо-попом</h3>
+                <time class="all-news__item-time time" datetime="2017-10-25T07:50">25 октября, 7:50</time>
+              </a>
+            </li>
+            <li class="all-news__item">
+              <a class="all-news__item-link" href="">
+                <div class="all-news__item-imagebox">
+                  <img class="all-news__item-image" src="https://images.unsplash.com/photo-1475868530036-7e1f42b9c91c?auto=format&fit=crop&w=1292&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Житель Почепского района из ревности до смерти забил односельчанина">
+                  <span class="all-news__item-rubric rubric">
+                    Происшествие
+                  </span>
+                </div>
+                <h3 class="all-news__item-title">Житель Почепского района из ревности до смерти забил односельчанина</h3>
+                <time class="all-news__item-time time" datetime="2017-10-25T06:50">25 октября, 6:50</time>
+              </a>
+            </li>
+            <li class="all-news__item">
+              <a class="all-news__item-link" href="">
+                <div class="all-news__item-imagebox">
+                  <img class="all-news__item-image" src="https://images.unsplash.com/photo-1495555499155-29db2c1db3fe?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Пятые брянские юношеские игры боевых искусств пройдут в городе Фокино">
+                  <span class="all-news__item-rubric rubric">
+                    Спорт
+                  </span>
+                </div>
+                <h3 class="all-news__item-title">Пятые брянские юношеские игры боевых искусств пройдут в городе Фокино</h3>
+                <time class="all-news__item-time time" datetime="2017-10-25T06:34">25 октября, 6:34</time>
+              </a>
+            </li>
+            <li class="all-news__item">
+              <a class="all-news__item-link" href="">
+                <div class="all-news__item-imagebox">
+                  <img class="all-news__item-image" src="https://images.unsplash.com/photo-1509223029680-bf5c4fe21130?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Новые законы и назначения: брянские депутаты рассмотрят более 25 вопросов">
+                  <span class="all-news__item-rubric rubric">
+                    Власть
+                  </span>
+                </div>
+                <h3 class="all-news__item-title">Новые законы и назначения: брянские депутаты рассмотрят более 25 вопросов</h3>
+                <time class="all-news__item-time time" datetime="2017-10-25T06:15">25 октября, 6:15</time>
+              </a>
+            </li>
+            <li class="all-news__item">
+              <a class="all-news__item-link" href="">
+                <div class="all-news__item-imagebox">
+                  <img class="all-news__item-image" src="https://images.unsplash.com/photo-1484729191033-ab703f3eac3a?auto=format&fit=crop&w=1353&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="13 брянских семей обзавелись собственными мини-фермами">
+                  <span class="all-news__item-rubric rubric">
+                    Общество
+                  </span>
+                </div>
+                <h3 class="all-news__item-title">13 брянских семей обзавелись собственными мини-фермами</h3>
+                <time class="all-news__item-time time" datetime="2017-10-24T20:18">24 октября, 20:18</time>
+              </a>
+            </li>
+            <li class="all-news__item">
+              <a class="all-news__item-link" href="">
+                <div class="all-news__item-imagebox">
+                  <img class="all-news__item-image" src="https://images.unsplash.com/photo-1505566820407-09e58207191c?auto=format&fit=crop&w=1267&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="Стали известны подробности ЧП в Клинцах с солдатами">
+                  <span class="all-news__item-rubric rubric">
+                    Происшествие
+                  </span>
+                </div>
+                <h3 class="all-news__item-title">Стали известны подробности ЧП в Клинцах с солдатами</h3>
+                <time class="all-news__item-time time" datetime="2017-10-24T19:43">24 октября, 19:43</time>
+              </a>
+            </li>
+          </ul>
+          <div class="button-wrapper">
+            <a class="button" href="">Еще больше новостей</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__inner container-fluid">
+        <div class="main-footer-panel">
+          <div class="main-footer-panel__item">
+            <nav class="footer-nav">
+              <ul class="footer-nav__list">
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="">Редакция</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="">Правообладателям</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="">Правила цитирования</a>
+                </li>
+                <li class="footer-nav__item">
+                  <a class="footer-nav__link" href="">Реклама</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-footer-panel__item">
+            <form class="searchbox" action="" method="GET">
+              <input class="searchbox__input form-control" type="search" name="s" placeholder="Поиск">
+              <button class="searchbox__submit" aria-label="Искать">
+                <svg class="searchbox__submit-icon" width="18" height="18">
+                  <use xlink:href="/images/symbols.svg#search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="main-footer-grid">
+          <div class="main-footer-grid__column-left">
+            <div class="main-footer__age-limit">
+              <p>
+                <img src="../images/logo-with-caption-age.svg" width="202" alt="">
+              </p>
+              <p>Настоящий ресурс может содержать материалы 18+</p>
+            </div>
+          </div>
+          <div class="main-footer-grid__column-main">
+            <div class="main-footer__credits">
+              <p>Сетевое издание «Наш Брянск.Ru» зарегистрировано в Федеральной службе по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор) 6 апреля 2017. Свидетельство о регистрации ЭЛ № ФС 77-69301.</p>
+            </div>
+          </div>
+          <div class="main-footer-grid__column-right">
+            <p class="developer">
+              Проект разработан в <a href="http://ideapix.ru">интерактивном агентстве «Идея Пикс»</a>
+            </p>
+            <p class="main-footer-informers">
+              <span class="main-footer-informers__item">
+                <img src="/images/metriks/logo.gif" title="LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня" alt="" border="0" width="88" height="31">
+              </span>
+              <span class="main-footer-informers__item">
+                <img src="/images/metriks/counter.gif" style="border:0;" height="31" width="88" alt="Рейтинг@Mail.ru">
+              </span>
+              <span class="main-footer-informers__item">
+                <img src="/images/metriks/3_0_868686FF_666666FF_1_pageviews.png" style="width:88px;height:31px;border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)">
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="main-footer-grid">
+          <div class="main-footer-grid__column-left">
+            <p>© NASHBRYANSK.RU, 2005—2017</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
