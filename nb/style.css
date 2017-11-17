@@ -2126,6 +2126,7 @@ ul:not([class]) li::before {
   display: block;
   width: 100%;
   height: auto;
+  border: none;
 }
 
 .sticky-banners {
@@ -2538,6 +2539,10 @@ ul:not([class]) li::before {
 
 .sidebar-module {
   margin-bottom: 2.1875rem;
+}
+
+.sidebar-module:last-child {
+  margin-bottom: 0;
 }
 
 .sidebar-module__head {
